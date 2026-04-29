@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Soworks, cabinet d'AMO indépendant : nous portons la voix du maître d'ouvrage du programme à la livraison.",
+          "Soworks, bureau d'études AMO indépendant : porter la voix du maître d'ouvrage, du programme à la livraison.",
       },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },
@@ -67,9 +67,10 @@ function Home() {
               Conduire vos projets bâtis avec rigueur, clarté et sérénité.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Soworks accompagne maîtres d'ouvrage publics et privés à chaque
-              étape de leur opération de construction, de réhabilitation ou
-              d'aménagement — du programme à la livraison.
+              Soworks est un bureau d'études AMO indépendant qui accompagne
+              maîtres d'ouvrage publics et privés à chaque étape de leur
+              opération de construction, de réhabilitation ou d'aménagement —
+              du programme à la livraison.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <a
@@ -82,7 +83,7 @@ function Home() {
                 href="#a-propos"
                 className="inline-flex items-center gap-2 px-7 py-3.5 border border-primary/20 text-primary rounded-sm hover:bg-primary/5 transition-colors text-sm tracking-wide"
               >
-                Découvrir le cabinet
+                Découvrir le bureau d'études
               </a>
             </div>
 
@@ -133,13 +134,13 @@ function Home() {
             <SectionHeading
               eyebrow="À propos"
               title="Une expertise discrète au service du maître d'ouvrage."
-              subtitle="Fondé à Paris, Soworks réunit ingénieurs, architectes et économistes de la construction. Nous représentons et défendons les intérêts du maître d'ouvrage, en toute indépendance, sur des projets résidentiels, tertiaires, hôteliers et patrimoniaux."
+              subtitle="Soworks est un bureau d'études d'assistance à maîtrise d'ouvrage indépendant. Soworks représente et défend les intérêts du maître d'ouvrage, en toute indépendance, sur des projets résidentiels, tertiaires, hôteliers et patrimoniaux. Pour les missions qui le justifient, Soworks s'appuie sur un réseau de partenaires de confiance — architectes, ingénieurs et économistes — mobilisés au cas par cas."
             />
             <div className="mt-10 grid sm:grid-cols-2 gap-6">
               {[
                 { t: "Indépendance", d: "Aucun lien avec la maîtrise d'œuvre ni les entreprises." },
-                { t: "Pluridisciplinarité", d: "Architectes, ingénieurs et économistes réunis." },
-                { t: "Proximité", d: "Un interlocuteur unique, présent à chaque comité." },
+                { t: "Interlocuteur unique", d: "Un seul référent, du premier échange à la livraison." },
+                { t: "Proximité", d: "Une disponibilité réelle, présent à chaque comité." },
                 { t: "Exigence", d: "Une méthode éprouvée et des livrables documentés." },
               ].map((b) => (
                 <div key={b.t} className="border-l-2 border-gold pl-4">
@@ -158,7 +159,7 @@ function Home() {
           <SectionHeading
             eyebrow="Portfolio"
             title="Des opérations menées avec exigence."
-            subtitle="Une sélection récente de projets accompagnés par nos équipes."
+            subtitle="Une sélection récente de projets accompagnés par Soworks."
             align="center"
           />
           <div className="mt-16 grid sm:grid-cols-2 gap-6">
@@ -276,8 +277,8 @@ function ContactSection() {
                   </div>
                   <h3 className="mt-5 font-serif text-2xl text-primary">Message envoyé</h3>
                   <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-                    Nous vous remercions pour votre message. Notre équipe revient
-                    vers vous sous 48 heures ouvrées.
+                    Merci pour votre message. Soworks revient vers vous sous
+                    48 heures ouvrées.
                   </p>
                 </div>
               ) : (

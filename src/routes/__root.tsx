@@ -35,7 +35,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Soworks, cabinet d'assistance à maîtrise d'ouvrage. Nous accompagnons vos projets de construction et d'aménagement avec rigueur, expertise et sérénité.",
+          "Soworks, bureau d'études AMO indépendant. Un accompagnement de vos projets de construction et d'aménagement mené avec rigueur, expertise et sérénité.",
       },
       { name: "author", content: "Soworks" },
       { property: "og:type", content: "website" },

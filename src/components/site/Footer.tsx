@@ -10,8 +10,9 @@ export function Footer() {
             <div className="font-serif text-lg text-primary">Soworks</div>
           </div>
           <p className="text-sm text-muted-foreground max-w-md leading-relaxed">
-            Cabinet d'assistance à maîtrise d'ouvrage. Nous accompagnons vos
-            projets de construction et d'aménagement avec rigueur et sérénité.
+            Bureau d'études d'assistance à maîtrise d'ouvrage indépendant.
+            Un accompagnement rigoureux et serein de vos projets de
+            construction et d'aménagement.
           </p>
         </div>
 
