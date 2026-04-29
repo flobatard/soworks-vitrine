@@ -209,8 +209,44 @@ function Home() {
   );
 }
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mykoggjz";
+
 function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setError(null);
+    setSubmitting(true);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        form.reset();
+      } else {
+        const json = await res.json().catch(() => null);
+        const message =
+          json?.errors?.map((er: { message: string }) => er.message).join(", ") ||
+          "Une erreur est survenue. Merci de réessayer.";
+        setError(message);
+      }
+    } catch {
+      setError("Impossible d'envoyer le message. Vérifiez votre connexion.");
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   return (
     <section id="contact" className="bg-card border-t border-border py-24 scroll-mt-24">
@@ -264,10 +300,7 @@ function ContactSection() {
 
           <div className="lg:col-span-8">
             <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setSubmitted(true);
-              }}
+              onSubmit={handleSubmit}
               className="bg-background border border-border rounded-sm p-8 lg:p-10 space-y-5"
             >
               {submitted ? (
@@ -293,21 +326,32 @@ function ContactSection() {
                   </div>
                   <Field label="Type de projet" name="type" />
                   <div>
-                    <label className="block text-xs uppercase tracking-[0.18em] text-primary mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-xs uppercase tracking-[0.18em] text-primary mb-2"
+                    >
                       Votre message
                     </label>
                     <textarea
+                      id="message"
+                      name="message"
                       required
                       rows={5}
                       className="w-full bg-background border border-input rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors"
                       placeholder="Décrivez brièvement votre projet, son contexte et vos attentes…"
                     />
                   </div>
+                  {error && (
+                    <p className="text-sm text-destructive" role="alert">
+                      {error}
+                    </p>
+                  )}
                   <button
                     type="submit"
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground rounded-sm hover:bg-primary/90 transition-colors text-sm tracking-wide"
+                    disabled={submitting}
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-primary text-primary-foreground rounded-sm hover:bg-primary/90 transition-colors text-sm tracking-wide disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Envoyer mon message <Send size={16} />
+                    {submitting ? "Envoi en cours…" : "Envoyer mon message"} <Send size={16} />
                   </button>
                   <p className="text-xs text-muted-foreground">
                     Vos informations restent strictement confidentielles.
