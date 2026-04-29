@@ -50,12 +50,6 @@ export function Header() {
               {l.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            className="text-sm px-5 py-2.5 bg-primary text-primary-foreground rounded-sm hover:bg-primary/90 transition-colors"
-          >
-            Prendre contact
-          </a>
         </nav>
 
         <button

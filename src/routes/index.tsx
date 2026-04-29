@@ -40,19 +40,19 @@ const projects = [
   { img: p4, title: "Hôtel Maison Sage", meta: "Hôtellerie 4★ · 42 chambres · Lyon" },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Un partenaire de confiance qui a su défendre nos intérêts à chaque étape. La rigueur et la pédagogie de l'équipe ont été déterminantes.",
-    name: "Hélène Marchand",
-    role: "Directrice immobilière, Groupe Verlaine",
-  },
-  {
-    quote:
-      "Soworks nous a apporté une lecture experte de notre projet et une sérénité précieuse face à la complexité du chantier.",
-    name: "Pierre Lacombe",
-    role: "Président, SCI Lumen",
-  },
+const testimonials : {quote: string, name: string, role: string}[] = [
+  //{
+  //  quote:
+  //    "Un partenaire de confiance qui a su défendre nos intérêts à chaque étape. La rigueur et la pédagogie de l'équipe ont été déterminantes.",
+  //  name: "Hélène Marchand",
+  //  role: "Directrice immobilière, Groupe Verlaine",
+  //},
+  //{
+  //  quote:
+  //    "Soworks nous a apporté une lecture experte de notre projet et une sérénité précieuse face à la complexité du chantier.",
+  //  name: "Pierre Lacombe",
+  //  role: "Président, SCI Lumen",
+  //},
 ];
 
 function Home() {
@@ -109,15 +109,6 @@ function Home() {
                 height={1200}
                 className="w-full h-full object-cover"
               />
-            </div>
-            <div className="hidden md:block absolute -bottom-8 -left-8 bg-background border border-border rounded-sm p-5 shadow-[var(--shadow-card)] max-w-[16rem]">
-              <div className="flex items-center gap-3">
-                <Users className="text-gold" size={20} />
-                <div className="font-serif text-primary text-lg">Indépendants</div>
-              </div>
-              <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
-                Aucune mission de maîtrise d'œuvre. Notre seul intérêt est le vôtre.
-              </p>
             </div>
           </div>
         </div>
