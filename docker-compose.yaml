@@ -3,5 +3,5 @@ services:
     build: .
     image: registry.vpn.h.fbatard.fr/admin/site-soworks-vitrine
     ports:
-      - "4400:80"
+      - "4500:80"
     restart: unless-stopped
