@@ -1,4 +1,4 @@
-import aboutImg from "@/assets/about.jpg";
+import aboutImg from "@/assets/pierre.png";
 import { SectionHeading } from "@/components/site/SectionHeading";
 
 export function About() {

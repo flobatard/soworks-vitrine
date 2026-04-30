@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/hero.jpeg";
 import { Eyebrow } from "@/components/site/SectionHeading";
 
 export function Hero() {
@@ -34,9 +34,9 @@ export function Hero() {
 
           <div className="mt-14 grid grid-cols-3 gap-6 max-w-lg">
             {[
-              { n: "18", l: "années d'expérience" },
-              { n: "120+", l: "opérations menées" },
-              { n: "240 M€", l: "de travaux pilotés" },
+              { n: "10", l: "années d'expérience" },
+              //{ n: "120+", l: "opérations menées" },
+              { n: "60 M€", l: "de travaux pilotés" },
             ].map((s) => (
               <div key={s.l}>
                 <div className="font-serif text-3xl text-primary">{s.n}</div>

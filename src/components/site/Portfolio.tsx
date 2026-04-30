@@ -2,14 +2,14 @@ import { Quote } from "lucide-react";
 import p1 from "@/assets/project-1.jpg";
 import p2 from "@/assets/project-2.jpg";
 import p3 from "@/assets/project-3.jpg";
-import p4 from "@/assets/project-4.jpg";
+import p4 from "@/assets/sony_2.jpg";
 import { SectionHeading } from "@/components/site/SectionHeading";
 
 const projects = [
-  { img: p1, title: "Résidence Belleville", meta: "Logement collectif · 38 lots · Paris XX" },
-  { img: p2, title: "Siège social Lumen", meta: "Tertiaire · 2 400 m² · Boulogne" },
-  { img: p3, title: "Réhabilitation Hôtel Pereire", meta: "Patrimoine haussmannien · Paris XVII" },
-  { img: p4, title: "Hôtel Maison Sage", meta: "Hôtellerie 4★ · 42 chambres · Lyon" },
+  { img: p1, title: "PSG — Remplacement GTB / VCO / éclairages (Décret tertiaire)", meta: "10 M€" },
+  { img: p2, title: "Paris 9 · Rénovation immeuble Opéra post-incendie", meta: "10 M€" },
+  { img: p3, title: "La Défense · Rénovation façades IGH", meta: "10 M€" },
+  { img: p4, title: "Locaux Sony Music", meta: "4000m² · 10 M€" },
 ];
 
 const testimonials: { quote: string; name: string; role: string }[] = [
@@ -51,7 +51,7 @@ export function Portfolio() {
                 />
               </div>
               <figcaption className="mt-5 flex items-baseline justify-between gap-4">
-                <h3 className="font-serif text-xl text-primary">{p.title}</h3>
+                <h3 className="font-serif text-xl text-primary max-w-[80%]">{p.title}</h3>
                 <span className="text-xs text-muted-foreground text-right">{p.meta}</span>
               </figcaption>
             </figure>
