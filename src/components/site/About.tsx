@@ -9,7 +9,7 @@ export function About() {
           <div className="aspect-[4/5] rounded-sm overflow-hidden">
             <img
               src={aboutImg}
-              alt="Hall lumineux d'un immeuble parisien en cours d'aménagement"
+              alt="Pierre Solignac, fondateur de Soworks"
               width={1200}
               height={1500}
               loading="lazy"
@@ -36,6 +36,33 @@ export function About() {
               </div>
             ))}
           </div>
+          <figure className="mt-12 border-l-2 border-gold pl-6">
+            <blockquote className="font-serif text-lg lg:text-xl text-primary leading-relaxed italic">
+              «&nbsp;Manager d'hommes et de projets, j'ai à cœur de mettre ma
+              conviction au service de celles et ceux qui font la force d'une
+              opération. Écouter, structurer, accompagner, guider, challenger
+              : une exigence que je porte de la première esquisse à la
+              livraison.&nbsp;»
+            </blockquote>
+            <figcaption className="mt-4 text-sm text-muted-foreground leading-relaxed">
+              <span className="font-medium text-primary">Pierre Solignac</span>
+              {" — "}fondateur de Soworks. Plus de trente ans à la croisée du
+              management d'équipes et de la conduite d'opérations techniques
+              — direction de département technique et travaux chez Nexity,
+              direction travaux MOD/AMO/MOEx chez TELMMA, maîtrise d'œuvre en
+              indépendant, et près de vingt ans d'expertise et d'instruction
+              en maintenance aéronautique chez Air France.{" "}
+              <a
+                href="https://www.linkedin.com/in/pierre-solignac-38973547/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold underline-offset-4 hover:underline"
+              >
+                Profil LinkedIn
+              </a>
+              .
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
