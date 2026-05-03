@@ -1,15 +1,13 @@
 import { CONTACT } from "@/lib/contact";
+import fullLogo from "@/assets/full_logo.png";
 
 export function Footer() {
   return (
     <footer className="border-t border-border bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-12 grid gap-10 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-3 mb-4">
-            <div className="h-9 w-9 rounded-sm border border-gold flex items-center justify-center">
-              <span className="font-serif text-gold text-lg leading-none">S</span>
-            </div>
-            <div className="font-serif text-lg text-primary">Soworks</div>
+          <div className="mb-4">
+            <img src={fullLogo} alt="Soworks" className="h-12 w-auto" />
           </div>
           <p className="text-sm text-muted-foreground max-w-md leading-relaxed">
             Votre assistant à maitrise d’ouvrage indépendant. Un accompagnement
