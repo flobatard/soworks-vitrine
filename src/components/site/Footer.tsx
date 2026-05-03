@@ -1,3 +1,5 @@
+import { CONTACT } from "@/lib/contact";
+
 export function Footer() {
   return (
     <footer className="border-t border-border bg-background">
@@ -28,9 +30,9 @@ export function Footer() {
         <div>
           <h4 className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li>85 rue Raymond Lefebvre, 94250 Gentilly</li>
-            <li className="pt-2">pierre@soworks.fr</li>
-            <li>+33 6 72 84 64 76</li>
+            <li>{CONTACT.address.street}, {CONTACT.address.city}</li>
+            <li className="pt-2">{CONTACT.email}</li>
+            <li>{CONTACT.phone.display}</li>
           </ul>
         </div>
       </div>

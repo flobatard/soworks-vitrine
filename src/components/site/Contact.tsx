@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { SectionHeading } from "@/components/site/SectionHeading";
+import { CONTACT } from "@/lib/contact";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mykoggjz";
 
@@ -59,10 +60,10 @@ export function Contact() {
                 <span className="text-xs uppercase tracking-[0.2em]">Email</span>
               </div>
               <a
-                href="mailto:pierre@soworks.fr"
+                href={`mailto:${CONTACT.email}`}
                 className="block mt-2 font-serif text-xl text-foreground hover:text-primary"
               >
-                pierre@soworks.fr
+                {CONTACT.email}
               </a>
             </div>
             <div>
@@ -71,10 +72,10 @@ export function Contact() {
                 <span className="text-xs uppercase tracking-[0.2em]">Téléphone</span>
               </div>
               <a
-                href="tel:+33672846476"
+                href={`tel:${CONTACT.phone.href}`}
                 className="block mt-2 font-serif text-xl text-foreground hover:text-primary"
               >
-                +33 6 72 84 64 76
+                {CONTACT.phone.display}
               </a>
             </div>
             <div>
@@ -83,7 +84,7 @@ export function Contact() {
                 <span className="text-xs uppercase tracking-[0.2em]">Adresse</span>
               </div>
               <address className="mt-2 not-italic font-serif text-xl text-foreground leading-snug">
-                85 rue Raymond Lefebvre<br />94250 Gentilly
+                {CONTACT.address.street}<br />{CONTACT.address.city}
               </address>
             </div>
           </div>
