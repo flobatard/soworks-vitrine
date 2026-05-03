@@ -101,8 +101,8 @@ export function Contact() {
                   </div>
                   <h3 className="mt-5 font-serif text-2xl text-primary">Message envoyé</h3>
                   <p className="mt-3 text-muted-foreground max-w-md mx-auto">
-                    Merci pour votre message. Soworks revient vers vous sous
-                    48 heures ouvrées.
+                    Merci pour votre message. Soworks reviendra vers vous très
+                    prochainement.
                   </p>
                 </div>
               ) : (

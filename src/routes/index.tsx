@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/Rotonde_Opéra.jpg";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { Portfolio } from "@/components/site/Portfolio";
@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Soworks, bureau d'études AMO indépendant : porter la voix du maître d'ouvrage, du programme à la livraison.",
+          "Soworks, AMO indépendant : représenter et défendre les intérêts du maître d'ouvrage, de l'initiation à la livraison.",
       },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },

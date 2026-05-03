@@ -9,7 +9,7 @@ export function Hero() {
         <div className="lg:col-span-6 fade-in-up">
           <Eyebrow>Assistance à maîtrise d'ouvrage</Eyebrow>
           <h1 className="mt-6 font-serif text-4xl sm:text-5xl lg:text-[3.75rem] leading-[1.05] text-primary text-balance">
-            Conduire vos projets bâtis avec rigueur, clarté et sérénité.
+            Vos intentions guident vos projets, notre expertise les conduit.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
             Soworks est un AMO indépendant présent à chaque étape
@@ -54,7 +54,7 @@ export function Hero() {
               alt="Chef de projet et architecte étudiant des plans sur un chantier"
               width={1600}
               height={1200}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-[center_30%]"
             />
           </div>
         </div>

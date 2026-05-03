@@ -32,9 +32,9 @@ export function About() {
           <div className="mt-10 grid sm:grid-cols-2 gap-6">
             {[
               { t: "Indépendance", d: "Aucun lien avec la maîtrise d'œuvre ni les entreprises." },
-              { t: "Ecoute", d: "Un interlocuteur présent et mobilisé du premier échange à la livraison" },
+              { t: "Écoute", d: "Un interlocuteur présent et mobilisé du premier échange à la livraison." },
               { t: "Proximité", d: "Une disponibilité réelle, présent à chaque comité." },
-              { t: "Adaptation", d: "Un agilité et une réactivité unique." },
+              { t: "Adaptation", d: "Une agilité et une réactivité unique." },
             ].map((b) => (
               <div key={b.t} className="border-l-2 border-gold pl-4">
                 <div className="font-serif text-lg text-primary">{b.t}</div>
