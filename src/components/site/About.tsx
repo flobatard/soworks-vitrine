@@ -21,14 +21,20 @@ export function About() {
           <SectionHeading
             eyebrow="À propos"
             title="Une expertise discrète au service du maître d'ouvrage."
-            subtitle="Soworks est un bureau d'études d'assistance à maîtrise d'ouvrage indépendant. Soworks représente et défend les intérêts du maître d'ouvrage, en toute indépendance, sur des projets résidentiels, tertiaires, hôteliers et patrimoniaux. Pour les missions qui le justifient, Soworks s'appuie sur un réseau de partenaires de confiance — architectes, ingénieurs et économistes — mobilisés au cas par cas."
+            subtitle="Soworks est un assistant à maitrise d’ouvrage indépendant.
+              Nous représentons et défendons vos intérêts sur des projets
+              tertiaires, hôteliers et patrimoniaux.
+              Pour les missions qui le justifient, Soworks s’appuie sur un
+              réseau de partenaires de confiance -architectes, ingénieurs,
+              bureaux d’études et bureaux de contrôle- mobilisés au cas par
+              cas en adéquation avec le projet."
           />
           <div className="mt-10 grid sm:grid-cols-2 gap-6">
             {[
               { t: "Indépendance", d: "Aucun lien avec la maîtrise d'œuvre ni les entreprises." },
-              { t: "Interlocuteur unique", d: "Un seul référent, du premier échange à la livraison." },
+              { t: "Ecoute", d: "Un interlocuteur présent et mobilisé du premier échange à la livraison" },
               { t: "Proximité", d: "Une disponibilité réelle, présent à chaque comité." },
-              { t: "Exigence", d: "Une méthode éprouvée et des livrables documentés." },
+              { t: "Adaptation", d: "Un agilité et une réactivité unique." },
             ].map((b) => (
               <div key={b.t} className="border-l-2 border-gold pl-4">
                 <div className="font-serif text-lg text-primary">{b.t}</div>
@@ -50,7 +56,7 @@ export function About() {
               management d'équipes et de la conduite d'opérations techniques
               — direction de département technique et travaux chez Nexity,
               direction travaux MOD/AMO/MOEx chez TELMMA, maîtrise d'œuvre en
-              indépendant, et près de vingt ans d'expertise et d'instruction
+              indépendant, et près de vingt ans d'expertise 
               en maintenance aéronautique chez Air France.{" "}
               <a
                 href="https://www.linkedin.com/in/pierre-solignac-38973547/"

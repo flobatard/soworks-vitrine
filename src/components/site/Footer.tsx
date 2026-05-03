@@ -10,9 +10,9 @@ export function Footer() {
             <div className="font-serif text-lg text-primary">Soworks</div>
           </div>
           <p className="text-sm text-muted-foreground max-w-md leading-relaxed">
-            Bureau d'études d'assistance à maîtrise d'ouvrage indépendant.
-            Un accompagnement rigoureux et serein de vos projets de
-            construction et d'aménagement.
+            Votre assistant à maitrise d’ouvrage indépendant. Un accompagnement
+            serein, rigoureux et optimiste de vos projets de rénovation et
+            d’aménagement.
           </p>
         </div>
 
@@ -28,9 +28,9 @@ export function Footer() {
         <div>
           <h4 className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li>14 rue de Vauban, 75007 Paris</li>
-            <li className="pt-2">contact@soworks.fr</li>
-            <li>+33 1 45 67 89 10</li>
+            <li>85 rue Raymond Lefebvre, 94250 Gentilly</li>
+            <li className="pt-2">pierre@soworks.fr</li>
+            <li>+33 6 72 84 64 76</li>
           </ul>
         </div>
       </div>

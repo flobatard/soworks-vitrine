@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import fullLogo from "@/assets/full_logo.png";
 
 const links = [
   { href: "#accueil", label: "Accueil" },
@@ -29,15 +30,7 @@ export function Header() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-20 flex items-center justify-between">
         <a href="#accueil" className="flex items-center gap-3 group">
-          <div className="h-9 w-9 rounded-sm border border-gold flex items-center justify-center">
-            <span className="font-serif text-gold text-lg leading-none">S</span>
-          </div>
-          <div className="leading-tight">
-            <div className="font-serif text-lg text-primary">Soworks</div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              Assistance à maîtrise d'ouvrage
-            </div>
-          </div>
+          <img src={fullLogo} alt="Soworks" className="h-12 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-9">

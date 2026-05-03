@@ -59,10 +59,10 @@ export function Contact() {
                 <span className="text-xs uppercase tracking-[0.2em]">Email</span>
               </div>
               <a
-                href="mailto:contact@soworks.fr"
+                href="mailto:pierre@soworks.fr"
                 className="block mt-2 font-serif text-xl text-foreground hover:text-primary"
               >
-                contact@soworks.fr
+                pierre@soworks.fr
               </a>
             </div>
             <div>
@@ -71,10 +71,10 @@ export function Contact() {
                 <span className="text-xs uppercase tracking-[0.2em]">Téléphone</span>
               </div>
               <a
-                href="tel:+33145678910"
+                href="tel:+33672846476"
                 className="block mt-2 font-serif text-xl text-foreground hover:text-primary"
               >
-                +33 1 45 67 89 10
+                +33 6 72 84 64 76
               </a>
             </div>
             <div>
@@ -83,11 +83,8 @@ export function Contact() {
                 <span className="text-xs uppercase tracking-[0.2em]">Adresse</span>
               </div>
               <address className="mt-2 not-italic font-serif text-xl text-foreground leading-snug">
-                14 rue de Vauban<br />75007 Paris
+                85 rue Raymond Lefebvre<br />94250 Gentilly
               </address>
-            </div>
-            <div className="pt-6 border-t border-border text-sm text-muted-foreground leading-relaxed">
-              Du lundi au vendredi, de 9h à 19h. Réponse sous 48 heures ouvrées.
             </div>
           </div>
 

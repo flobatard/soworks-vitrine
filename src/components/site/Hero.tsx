@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import heroImg from "@/assets/hero.jpeg";
+import heroImg from "@/assets/Rotonde_Opéra.jpg";
 import { Eyebrow } from "@/components/site/SectionHeading";
 
 export function Hero() {
@@ -12,10 +12,11 @@ export function Hero() {
             Conduire vos projets bâtis avec rigueur, clarté et sérénité.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Soworks est un bureau d'études AMO indépendant qui accompagne
-            maîtres d'ouvrage publics et privés à chaque étape de leur
-            opération de construction, de réhabilitation ou d'aménagement —
-            du programme à la livraison.
+            Soworks est un AMO indépendant présent à chaque étape
+            de votre projet, de l’initiation jusqu’à la pleine prise en
+            main. Nous sommes à vos côtés pour vous écouter, vous
+            conseiller, et vous accompagner pour être au plus près de
+            vos intentions.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
@@ -28,13 +29,13 @@ export function Hero() {
               href="#a-propos"
               className="inline-flex items-center gap-2 px-7 py-3.5 border border-primary/20 text-primary rounded-sm hover:bg-primary/5 transition-colors text-sm tracking-wide"
             >
-              Découvrir le bureau d'études
+              Découvrir Soworks
             </a>
           </div>
 
           <div className="mt-14 grid grid-cols-3 gap-6 max-w-lg">
             {[
-              { n: "10", l: "années d'expérience" },
+              { n: "15", l: "années d'expérience en AMO" },
               //{ n: "120+", l: "opérations menées" },
               { n: "60 M€", l: "de travaux pilotés" },
             ].map((s) => (
