@@ -20,9 +20,9 @@ export function Footer() {
         <div>
           <h4 className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Navigation</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#a-propos" className="hover:text-primary">À propos</a></li>
-            <li><a href="#portfolio" className="hover:text-primary">Portfolio</a></li>
-            <li><a href="#contact" className="hover:text-primary">Contact</a></li>
+            <li><Link to="/" hash="a-propos" className="hover:text-primary">À propos</Link></li>
+            <li><Link to="/" hash="portfolio" className="hover:text-primary">Portfolio</Link></li>
+            <li><Link to="/" hash="contact" className="hover:text-primary">Contact</Link></li>
           </ul>
         </div>
 

@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import fullLogo from "@/assets/full_logo.png";
 
 const links = [
-  { href: "#accueil", label: "Accueil" },
-  { href: "#a-propos", label: "À propos" },
-  { href: "#portfolio", label: "Portfolio" },
-  { href: "#contact", label: "Contact" },
+  { hash: "accueil", label: "Accueil" },
+  { hash: "a-propos", label: "À propos" },
+  { hash: "portfolio", label: "Portfolio" },
+  { hash: "contact", label: "Contact" },
 ] as const;
 
 export function Header() {
@@ -29,19 +30,20 @@ export function Header() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-20 flex items-center justify-between">
-        <a href="#accueil" className="flex items-center gap-3 group">
+        <Link to="/" hash="accueil" className="flex items-center gap-3 group">
           <img src={fullLogo} alt="Soworks" className="h-12 w-auto" />
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-9">
           {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
+            <Link
+              key={l.hash}
+              to="/"
+              hash={l.hash}
               className="text-sm text-foreground/80 hover:text-primary transition-colors"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -58,14 +60,15 @@ export function Header() {
         <div className="md:hidden bg-background border-t border-border">
           <nav className="flex flex-col px-6 py-4 gap-1">
             {links.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
+              <Link
+                key={l.hash}
+                to="/"
+                hash={l.hash}
                 onClick={() => setOpen(false)}
                 className="py-3 text-foreground/80"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
