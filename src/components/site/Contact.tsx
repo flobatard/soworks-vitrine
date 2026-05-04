@@ -144,8 +144,18 @@ export function Contact() {
                   >
                     {submitting ? "Envoi en cours…" : "Envoyer mon message"} <Send size={16} />
                   </button>
-                  <p className="text-xs text-muted-foreground">
-                    Vos informations restent strictement confidentielles.
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Vos données sont collectées par Soworks pour répondre à votre demande et
+                    conservées le temps nécessaire à son traitement. Vous disposez d&apos;un droit
+                    d&apos;accès, de rectification, de suppression et d&apos;opposition en écrivant
+                    à{" "}
+                    <a
+                      href={`mailto:${CONTACT.email}`}
+                      className="underline hover:text-primary"
+                    >
+                      {CONTACT.email}
+                    </a>
+                    .
                   </p>
                 </>
               )}
