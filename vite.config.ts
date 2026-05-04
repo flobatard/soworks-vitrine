@@ -9,7 +9,10 @@ export default defineConfig({
     tsConfigPaths(),
     tailwindcss(),
     tanstackStart({
-      pages: [{ path: "/", prerender: { enabled: true } }],
+      pages: [
+        { path: "/", prerender: { enabled: true } },
+        { path: "/mentions-legales", prerender: { enabled: true } },
+      ],
     }),
     viteReact(),
   ],
